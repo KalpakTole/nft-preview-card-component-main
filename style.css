@@ -11,6 +11,10 @@
 	--line: hsl(215, 32%, 27%);
 	--fs-para: 18px;
 	--ff-root: "Outfit", sans-serif;
+	--shadow-1: rgb(5, 15, 31);
+	--shadow-2: rgb(7, 19, 39);
+	--shadow-3: rgb(12, 27, 53);
+	box-sizing: border-box;
 }
 
 body {
@@ -21,15 +25,138 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: var(--fs-para);
 	font-family: var(--ff-root);
 	background: var(--main-bg);
+	box-sizing: border-box;
+}
+
+*,
+body,
+h1,
+h2,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: var(--fs-para);
 }
 
 .card-container {
-	width: 20rem;
-	height: 30rem;
+	width: 19rem;
+	height: 36rem;
 	background: var(--card-bg);
 	border-radius: 1rem;
-	box-shadow: 2px 2px 8px 8px black;
+	display: flex;
+	/* justify-content: center; */
+	align-items: flex-start;
+	flex-direction: column;
+	box-shadow: 0px 0px 20px 4px rgb(10 25 48),
+		0px 0px 20px 12px var(--shadow-2), 0px 0px 20px 20px var(--shadow-3);
+	padding: 1.5rem;
+}
+
+.equilibrium {
+	width: -webkit-fill-available;
+	border-radius: 0.5rem;
+	/* margin: 1.5rem; */
+}
+
+.title {
+	color: white;
+	margin-top: 1.5rem;
+}
+
+.description {
+	color: var(--softblue);
+	margin-top: 1.5rem;
+}
+
+.balance-and-time {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 1.5rem;
+	width: 100%;
+}
+
+.balance {
+	color: var(--cyan);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ethereum {
+	margin-right: 0.5rem;
+}
+
+.time {
+	color: var(--softblue);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.clock {
+	margin-right: 0.5rem;
+}
+
+.section-change {
+	width: 100%;
+	margin-top: 1.5rem;
+}
+
+.avatar-desc {
+	margin-top: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.avatar {
+	width: 50px;
+	border-radius: 50%;
+	border: 1px solid white;
+	margin-right: 1rem;
+}
+
+.desc {
+	color: var(--softblue);
+}
+
+.nametag {
+	color: white;
+}
+
+.title:hover,
+.nametag:hover {
+	color: var(--cyan);
+	cursor: pointer;
+}
+
+.img-overlay {
+	position: absolute;
+	/* left: 0;
+	top: 0; */
+	background: var(--cyan);
+	width: inherit;
+	aspect-ratio: 1;
+	border-radius: 0.5rem;
+	z-index: 1010;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.img-overlay:hover {
+	background: hsla(178, 100%, 50%, 0.5);
+	opacity: 1;
+}
+
+.eye {
+	color: white;
 }
