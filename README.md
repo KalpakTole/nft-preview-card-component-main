@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://github.com/KalpakTole/nft-preview-card-component-main)
--   Live Site URL: [Add live site URL here](https://nft-preview-card-component-five.vercel.app/)
+-   Solution URL: [Solution on Github](https://github.com/KalpakTole/nft-preview-card-component-main)
+-   Live Site URL: [Vercel Live Site](https://nft-preview-card-component-five.vercel.app/)
 
 ## My process
 
