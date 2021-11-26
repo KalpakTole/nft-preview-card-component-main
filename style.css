@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
 
-/* .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); } */
-
 :root {
 	--softblue: hsl(215, 51%, 70%);
 	--cyan: hsl(178, 100%, 50%);
@@ -13,7 +10,6 @@
 	--ff-root: "Outfit", sans-serif;
 	--shadow-1: rgb(12, 23, 41);
 	--shadow-2: rgb(12, 25, 44);
-	/* --shadow-3: rgb(12, 27, 53); */
 	box-sizing: border-box;
 }
 
@@ -49,7 +45,6 @@ p {
 	background: var(--card-bg);
 	border-radius: 1rem;
 	display: flex;
-	/* justify-content: center; */
 	align-items: flex-start;
 	flex-direction: column;
 	box-shadow: 0px 40px 5px 16px var(--shadow-1),
@@ -60,7 +55,6 @@ p {
 .equilibrium {
 	width: -webkit-fill-available;
 	border-radius: 0.5rem;
-	/* margin: 1.5rem; */
 }
 
 .title {
@@ -139,8 +133,6 @@ p {
 
 .img-overlay {
 	position: absolute;
-	/* left: 0;
-	top: 0; */
 	background: var(--cyan);
 	width: inherit;
 	aspect-ratio: 1;
